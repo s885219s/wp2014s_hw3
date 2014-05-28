@@ -9,7 +9,7 @@
 		loginRequiredView:function(e){
 			return function(){
 				var currentUser=Parse.User.current();
-				if(t){
+				if(currentUser){
 					e();
 				}
 				else{
